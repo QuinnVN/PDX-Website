@@ -3,9 +3,9 @@ const sections = document.querySelectorAll('section');
 const links = document.querySelectorAll('.nav-list li ');
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY >= 600) {
+    if (window.scrollY >= 900) {
         header.classList.add('scrolled');
-    } else if (window.scrollY <= 600) {
+    } else if (window.scrollY <= 900) {
         header.classList.remove('scrolled');
     }
 
