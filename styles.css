@@ -157,5 +157,19 @@ a {
 }
 
 .description {
-    margin-top: 4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation-name: description;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    margin-top: 3rem;
 }
