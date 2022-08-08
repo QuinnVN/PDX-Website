@@ -8,15 +8,19 @@
 
 html {
     font-size: 15px;
+
+    scroll-behavior: smooth;
+    scroll-margin: 10px;
 }
 
 html,
 body {
     width: 100vh;
-    height: 100vh;
+    height: 500vh;
 
-    background: #121019;
-    color: #fff;
+    background-image: url('./assets/bg.png');
+    background-color: rgb(0, 0, 0);
+    background-repeat: no-repeat;
 }
 
 a {
@@ -24,6 +28,17 @@ a {
 
     font-family: 'Inter', sans-serif;
     text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #2878b9;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: #0c272e;
 }
 
 #topbar {
@@ -36,7 +51,7 @@ a {
     height: 60px;
     padding: 0 25px;
 
-    background: #09080d;
+    background: rgba(0, 0, 0, 0.5);
 
     font-family: 'Barlow', sans-serif;
 
@@ -87,8 +102,8 @@ a {
 
 .topbar-menu ul li a {
     display: block;
-    margin: 0 20px 0 20px;
-    border-radius: 25px;
+    margin: 0 10px 0 10px;
+    border-radius: 10px;
     padding: 10px;
 
     color: #fff;
@@ -104,7 +119,7 @@ a {
 }
 
 .topbar-menu ul li.discord-server a {
-    margin: 0 6rem 0 12rem;
+    margin: 0 6rem 0 1rem;
 
     background: #5865f2;
     color: #fff;
@@ -118,4 +133,29 @@ a {
 
 .topbar-menu ul li.discord-server:hover a {
     background: #09080d;
+}
+
+.scrolled {
+    height: fit-content;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 50px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    animation-name: title;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+.description {
+    margin-top: 4rem;
 }

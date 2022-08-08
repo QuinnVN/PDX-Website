@@ -1,4 +1,4 @@
-const header = document.querySelector('.header');
+const header = document.querySelector('.top-bar');
 const sections = document.querySelectorAll('section');
 const links = document.querySelectorAll('.nav-list li ');
 
