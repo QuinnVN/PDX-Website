@@ -19,7 +19,6 @@ body {
     height: 500vh;
 
     background-image: url('./assets/bg.png');
-    background-color: rgb(0, 0, 0);
     background-repeat: no-repeat;
 }
 
