@@ -128,14 +128,15 @@ a {
 }
 
 .topbar-menu ul li a:hover {
-    color: #5865f2;
+    color: #1b274c;
 }
 
 .topbar-menu ul li.discord-server:hover a {
-    border: none;
+    border: 2px solid #5865f2;
     
     background: #5865f2;
     box-shadow: 0 0 50px #5865f2;
+    color: #fff;
 }
 
 #header {
