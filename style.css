@@ -30,15 +30,15 @@ a {
     width: 0.5rem;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: #2878b9;
+    background-color: #405ea6;
     border-radius: 10px;
 }
 ::-webkit-scrollbar-track {
     background-color: #07122e;
 }
+
 ::selection {
     background-color: #2878b9;
-    color: black;
 }
 
 #topbar {
