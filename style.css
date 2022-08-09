@@ -132,6 +132,8 @@ a {
 }
 
 .topbar-menu ul li.discord-server:hover a {
+    border: none;
+    
     background: #5865f2;
     box-shadow: 0 0 50px #5865f2;
 }
