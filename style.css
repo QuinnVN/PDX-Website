@@ -120,8 +120,8 @@ a {
 
 .topbar-menu ul li.discord-server a {
     margin: 0 6rem 0 1rem;
+    border: 2px solid #1b274c;
 
-    background: #5865f2;
     color: #fff;
 
     transition: all 0.75s linear;
@@ -132,7 +132,8 @@ a {
 }
 
 .topbar-menu ul li.discord-server:hover a {
-    background: #09080d;
+    background: #5865f2;
+    box-shadow: 0 0 50px #5865f2;
 }
 
 #header {
