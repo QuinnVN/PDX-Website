@@ -1,0 +1,16 @@
+/* mobile */
+@media (max-width: 739px) {
+    
+}
+
+/* tablet (small screen pcs/laptops) */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .topbar-menu ul li:first-child {
+        font-size: 17px;
+        margin-left: 15px;
+    }
+
+    #description {
+        margin-top: 5.3em;
+    }
+}
