@@ -5,15 +5,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="#4287f5" />
-        <meta name="description" content="Trang web dành cho PDX" />
-        <meta name="og:site_name" content="Phố Đèn Xanh MC" />
+        <meta name="description" content="Trang web chính thức của PDX" />
+        <meta name="og:site_name" content="Phố Đèn Xanh" />
         <meta
             name="og:image"
             content="https://cdn.discordapp.com/attachments/947732424333357106/1006573569976832051/logo.png"
         />
-        <title>Phố Đèn Xanh MC</title>
-        <link rel="stylesheet" href="style.css" />
+        <title>Phố Đèn Xanh</title>
+        <link rel="stylesheet" href="../css/style.css" />
         <link rel="icon" href="../assets/favicon.ico" />
+        <script src="../js/main.js"></script>
     </head>
 
     <div class="loader"></div>
@@ -27,11 +28,16 @@
                         <li>
                             <a class="topbar-menu-item" href="#home">Trang Chủ</a>
                         </li>
+                       <!--Note Start
+
+                            onclick="notify('success/danger', 'message')"
+                            GÁN LỚN "btn" THÌ MỚI SÀI ĐC NHA
+                        Note End-->
                         <li>
-                            <a class="topbar-menu-item" href="#">Thông Tin</a>
+                            <a class="topbar-menu-item btn" href="#" onclick="notify('danger', 'Đang sửa')">Thông Tin</a>
                         </li>
                         <li>
-                            <a class="topbar-menu-item" href="#">Đội Ngũ</a>
+                            <a class="topbar-menu-item btn" href="#" onclick="notify('danger', 'Đang sửa')">Đội Ngũ</a>
                         </li>
                         <li class="discord-server">
                             <a class="topbar-menu-item" href="https://dsc.gg/phodenxanh">Discord</a>
@@ -39,16 +45,16 @@
                     </ul>
                 </div>
             </div>
+            <div id="notification-area"></div>
         </nav>
     </header>
-    <script src="../js/main.js"></script>
 
     <body>
         <section id="home">
             <div>
                 <h1 class="home-content" id="title">Phố Đèn Xanh</h1>
                 <h2 class="home-content" id="description">
-                    Chào mừng bạn đến với Phố Đèn Xanh - Một cộng đồng vui vẻ với các thành viên
+                     Chào mừng bạn đến với Phố Đèn Xanh - Một cộng đồng vui vẻ với các thành viên
                     thân thiện luôn coi nhau như gia đình!
                 </h2>
             </div>
