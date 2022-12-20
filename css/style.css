@@ -218,7 +218,7 @@ a {
     animation-name: description;
     animation-duration: 2.5s;
     animation-timing-function: ease-in-out;
-    margin-top: 4.5rem;
+    margin-top: 5.5rem;
 }
 
 @keyframes description {
