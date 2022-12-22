@@ -14,71 +14,52 @@
         <title>Phố Đèn Xanh</title>
         <link rel="stylesheet" href="../css/style.css" />
         <link rel="stylesheet" href="../css/responsive.css" />
-        <link rel="icon" href="../assets/favicon.ico" />
-        <link rel="stylesheet" href="../css/font-awesome.min.css" />
-        <link rel="stylesheet" href="../css/bootstrap.css" />
-     <!--   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">-->
+        <link rel="icon" href="../assets/img/favicon.ico" />
+        <link href="../assets/fonts/themify-icons/themify-icons.css" rel="stylesheet" />
     </head>
 
-    <div class="loader"></div>
-    <script src="../js/load.js"></script>
+    <body>
+        <div class="loader"></div>
+        <script src="../js/load.js"></script>
 
-    <header>
-        <nav id="topbar">
-            <div class="topbar-inner">
-                <a href="#home" class="topbar-title">Phố Đèn Xanh</a>
-                <div class="topbar-menu">
-                    <ul>
-                        <li class="discord-server">
-                            <a
-                                class="topbar-menu-item"
-                                href="https://dsc.gg/phodenxanh"
-                                target="_blank"
-                                >Discord</a
-                            >
-                        </li>
-                        <!--Note Start
+        <div id="header">
+            <div id="topbar">
+                <a id="topbar-title">Phố Đèn Xanh</a>
+                <ul id="navbar">
+                    <li>
+                        <a href="#home">Trang Chủ</a>
+                    </li>
+
+                    <li>
+                        <a href="#" onclick="notify('danger', 'Đang sửa')">Thông Tin</a>
+                    </li>
+
+                    <li>
+                        <a href="#" onclick="notify('danger', 'Đang sửa')">Đội Ngũ</a>
+                    </li>
+
+                    <li class="discord-server">
+                        <a class="discord-server" href="https://dsc.gg/phodenxanh" target="_blank"
+                            >Discord</a
+                        >
+                    </li>
+
+                    <!--Note Start
 
                             onclick="notify('success/danger', 'message')"
                             GÁN LỚP "btn" THÌ MỚI SÀI ĐC NHA
                         Note End-->
-                        <!-- <li>
-                            <a
-                                class="topbar-menu-item btn"
-                                href="#"
-                                onclick="notify('danger', 'Đang sửa')"
-                                >Thông Tin</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                class="topbar-menu-item btn"
-                                href="#"
-                                onclick="notify('danger', 'Đang sửa')"
-                                >Đội Ngũ</a
-                            >
-                        </li> -->
-                        <li>
-                        <a 
-                        class="topbar-menu-item "
-                        href="#home">
-                            mmb</a>
-                            <div class="home-option">
-                            <ul>
-                                <li><a class="topbar-menu-item btn" href="#" onclick="notify('danger', 'Đang sửa')">Thông tin</a></li>
-                                <li><a class="topbar-menu-item btn" href="#" onclick="notify('danger', 'Đang sửa')">Đội ngũ</a></li>
-                            </ul>
-                        </li>
-                        </div>
-                    </ul>
+                </ul>
+                <div id="mobile-menu-btn">
+                    <i class="mobile-menu-icon ti-menu"></i>
                 </div>
-            </div>
-            <div id="notification-area"></div>
-            <script src="../js/alert.js"></script>
-        </nav>
-    </header>
+                <script src="/js/mobile-dropdown-menu.js"></script>
 
-    <body>
+                <div id="notification-area"></div>
+                <script src="../js/alert.js"></script>
+            </div>
+        </div>
+
         <section id="home">
             <div>
                 <h1 class="home-content" id="title">Phố Đèn Xanh</h1>

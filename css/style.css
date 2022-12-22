@@ -83,20 +83,23 @@ a {
 /*---------------------------------------------------Topbar nav--------------------------------------*/
 #topbar {
     position: fixed;
-    z-index: 98;
+    z-index: 1;
     top: 0;
     left: 0;
+    right: 0;
 
     width: 100%;
     height: 60px;
 
-    background: #ffffff;
+    background: #fff;
 
     font-family: 'Barlow', sans-serif;
 
     animation-name: topBar;
     animation-duration: 1s;
     animation-timing-function: ease-out;
+
+    overflow: hidden;
 }
 
 @keyframes topBar {
@@ -111,17 +114,19 @@ a {
     }
 }
 
-.topbar-inner {
-    display: flex;
+/* #header {
+    display: inline-block;
     width: 100%;
     height: 100%;
     align-items: center;
     justify-content: space-between;
     padding: 0%;
-}
+} */
 
-.topbar-title {
-    margin: 0 0 0 25px;
+#topbar-title {
+    position: absolute;
+    top: 0.35em;
+    left: 1.5em;
 
     color: rgb(8, 124, 219);
 
@@ -131,17 +136,26 @@ a {
     text-transform: uppercase;
 }
 
-.topbar-menu ul {
-    display: flex;
-}
-
-.topbar-menu ul li {
-    list-style: none;
-}
-
-.topbar-menu-item {
+#navbar {
     display: block;
-    margin: 5px 10px;
+    list-style-type: none;
+    float: right;
+    top: 0;
+    right: 0;
+    margin-top: 8px;
+}
+
+#navbar > li {
+    display: inline-block;
+}
+
+#navbar li {
+    position: relative;
+}
+
+#navbar li a {
+    display: block;
+    margin: 10px 25px 10px 25px;
 
     color: rgb(0, 0, 0);
 
@@ -155,52 +169,50 @@ a {
     transition: all 0.25s ease;
 }
 
-.topbar-menu ul li.discord-server a {
+#navbar li.discord-server a {
     margin: 0 35px 0 15px;
     padding: 10px;
     transition: all 0.75s ease-out;
 }
 
-.topbar-menu ul li a:hover {
-    color: rgb(8, 124, 219);
-    transition: all 0.5s ease-in-out;
+@media (min-width: 1024px) {
+    #navbar li a:hover {
+        color: rgb(8, 124, 219);
+        transition: all 0.5s ease-in-out;
+    }
+
+    #navbar li.discord-server a:hover {
+        border-radius: 15px;
+        background: #5865f2;
+        box-shadow: 0 0 50px #5865f2;
+        color: rgb(255, 255, 255);
+    }
 }
 
-.topbar-menu ul li.discord-server a:hover {
-    border-radius: 15px;
-    background: #5865f2;
-    box-shadow: 0 0 50px #5865f2;
-    color: rgb(255, 255, 255);
-}
-
-.home-option {
-    display: none;
-}
-.topbar-menu ul li:hover .home-option {
-    display: block;
+#header #mobile-menu-btn {
     position: absolute;
-    background: rgb(255, 255, 255);
-    margin-top: 1px;
-    margin-left: -60px;
+    top: 0;
+    right: 0;
+    display: none;
+    float: right;
+    padding: 20px;
+    padding-right: 21px;
+    padding-top: 5px;
 }
-.topbar-menu ul li:hover .home-option ul {
-    display: block;
-    margin: 10px;
+
+#header .mobile-menu-icon {
+    font-size: 20px;
+    line-height: 46px;
+    color: #000;
+    transition: all 0.25s ease-in-out;
 }
-/*.topbar-menu ul li:hover .home-option ul li {
-    width: 150px;
-    padding: 10px;
-    border-bottom: 1px dotted #fff;
-    background: transparent;
-    border-radius: 0;
-    text-align: left;
-}*/
+
 /*-------------------------------------------------Home page / Body ------------------------------------*/
 #home {
     width: 100%;
     height: 100vh;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)),
-        url('../assets/bg.png');
+        url('../assets/img/bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
