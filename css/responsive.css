@@ -1,10 +1,63 @@
 /* mobile */
 @media (max-width: 739px) {
-    
+    #navbar,
+    #navbar > li {
+        display: block;
+    }
+
+    #navbar > li:first-child {
+        display: inline-block;
+        right: 2.5em;
+    }
+
+    #navbar li a {
+        padding: 0;
+        text-align: right;
+    }
+
+    #navbar li a.discord-server {
+        padding: 0;
+        margin: 10px 25px 10px 25px;
+    }
+
+    #header #mobile-menu-btn {
+        display: block;
+    }
+
+    #description {
+        top: 44%;
+        margin-top: 10em;
+        font-size: 13px;
+    }
+    #title {
+        top: 45%;
+        font-size: 25px;
+        margin-top: 50px;
+    }
+
+    @keyframes title {
+        0% {
+            transform: translate(-50%, 3000%);
+        }
+
+        100% {
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    @keyframes description {
+        0% {
+            transform: translate(-50%, 500%);
+        }
+
+        100% {
+            transform: translate(-50%, -50%);
+        }
+    }
 }
 
 /* tablet (small screen pcs/laptops) */
-@media (min-width: 740px) and (max-width: 1023px) {
+@media (min-width: 724px) and (max-width: 1023px) {
     .topbar-menu ul li:first-child {
         font-size: 17px;
         margin-left: 15px;
