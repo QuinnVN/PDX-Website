@@ -15,10 +15,6 @@
         text-align: right;
     }
 
-    #topbar-title {
-        left: 1em;
-    }
-
     #navbar li a.discord-server {
         padding: 0;
         margin: 10px 25px 10px 25px;
@@ -35,7 +31,7 @@
     }
     #title {
         top: 45%;
-        font-size: 27px;
+        font-size: 25px;
         margin-top: 50px;
     }
 
@@ -45,7 +41,7 @@
         }
 
         100% {
-            transform: translate(-50%, -45%);
+            transform: translate(-50%, -50%);
         }
     }
 
@@ -55,45 +51,7 @@
         }
 
         100% {
-            transform: translate(-50%, -44%);
-        }
-    }
-}
-
-@media (max-width: 399px) {
-    #topbar-title {
-        left: 1em;
-    }
-
-    #title {
-        top: 43%;
-        font-size: 23px;
-        margin-top: 50px;
-    }
-
-    #description {
-        top: 42%;
-        margin-top: 10em;
-        font-size: 13px;
-    }
-
-    @keyframes title {
-        0% {
-            transform: translate(-50%, 3000%);
-        }
-
-        100% {
-            transform: translate(-50%, -43%);
-        }
-    }
-
-    @keyframes description {
-        0% {
-            transform: translate(-50%, 500%);
-        }
-
-        100% {
-            transform: translate(-50%, -42%);
+            transform: translate(-50%, -50%);
         }
     }
 }
